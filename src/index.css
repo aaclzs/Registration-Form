@@ -2,4 +2,6 @@
 
 body{
     font-family: Raleway, sans-serif;
+    background-image: linear-gradient(#fbfbfb, #e6e6e6, #c0c0c0);
+    height: 100vh;
 }

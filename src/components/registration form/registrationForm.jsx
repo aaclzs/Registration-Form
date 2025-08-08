@@ -26,8 +26,8 @@ function RegistrationForm() {
         firstName: Yup.string().required("First name is required").max(50, 'Maximum character reached'),
         middleName: Yup.string().max(50, 'Maximum character reached'),
         employeeId: Yup.string().required("Employee ID is required").max(20, 'Maximum character reached'),
-        dateOfEmployment: Yup.date().required("Date of employment is required"),
-        dateHired: Yup.date().required("Date hired is required"),
+        dateOfEmployment: Yup.string().required("Date of employment is required"),
+        dateHired: Yup.string().required("Date hired is required"),
         departmentLocation: Yup.string().required("Department location is required"),
         scheduleTime: Yup.string().required("Schedule time is required"),
         position: Yup.string().required("Position is required").max(50, 'Maximum character reached'),
@@ -227,7 +227,15 @@ function RegistrationForm() {
                 </div>
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit" className="
+                bg-black hover:bg-blue-900
+                text-white 
+                font-bold  
+                py-2 px-5 mt-4
+                rounded-sm
+                ">
+                Submit
+            </button>
         </form>
     );
 }
