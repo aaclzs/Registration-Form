@@ -13,8 +13,11 @@ function App() {
 
       <div>
         <RegistrationForm />
+        
       </div>
     </div>
+
+    
   );
 }
 
